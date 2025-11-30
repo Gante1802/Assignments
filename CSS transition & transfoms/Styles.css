@@ -1,0 +1,66 @@
+/**Resets**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/**Card Styles**/
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  transition: transform 1s ease, box-shadow 0.5s ease, background-color 0.5s ease-in;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.card-one:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-two:hover {
+  transform: rotate(3deg) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-three:hover {
+  transform: translateY(-8px) skewX(-5deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-four:hover {
+  transform: translateZ(10px) scale(1.05) skewX(5deg) rotateY(20deg);
+  border: #ff0000 solid 3px;
+  border-radius: 16px;
+  filter: brightness(1.1);
+  box-shadow: red 0px 0px 10px;
+  background-color: #ff00009e;
+
+}
+
+/**/
