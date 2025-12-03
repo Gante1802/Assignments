@@ -13,8 +13,8 @@
   <!--ShareTechMono-->
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Diego's Portafolio</title>
 
 </head>
@@ -144,11 +144,26 @@
         Interested in collaborating or have a project in mind? Feel free to reach out!
       </p>
 
-      <form class="contact-form">
-        <input type="text" class="form-input" placeholder="Your Name" required>
-        <input type="email" class="form-input" placeholder="Your Email" required>
-        <textarea class="form-textarea" rows="5" placeholder="Your Message" required></textarea>
+      <form class="contact-form" action="https://formsubmit.co/diegosolergomez95@gmail.com" method="POST">
+
+        <div class="contact-form-div">
+
+          <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+        </div>
+
+        <div class="contact-form-div">
+          <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+        </div>
+
+        <div class="contact-form-div">
+          <textarea name="message" class="form-textarea" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+
         <button type="submit" class="btn btn--full btn--size-contact button">Send Message</button>
+
+        <input type="hidden" name="_subject" value="New message from your portfolio site" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
       </form>
 
     </section>
